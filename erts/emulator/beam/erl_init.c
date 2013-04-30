@@ -525,17 +525,17 @@ void erts_usage(void)
     erts_fprintf(stderr, "-sbt type   set scheduler bind type, valid types are:\n");
     erts_fprintf(stderr, "-stbt type  u|ns|ts|ps|s|nnts|nnps|tnnps|db\n");
     erts_fprintf(stderr, "-sbwt val   set scheduler busy wait threshold, valid values are:\n");
-    erts_fprintf(stderr, "            none|very_short|short|medium|long|very_long.\n");
+    erts_fprintf(stderr, "            none|very_short|short|medium|long|very_long|adaptive.\n");
     erts_fprintf(stderr, "-scl bool   enable/disable compaction of scheduler load,\n");
     erts_fprintf(stderr, "            see the erl(1) documentation for more info.\n");
     erts_fprintf(stderr, "-sct cput   set cpu topology,\n");
     erts_fprintf(stderr, "            see the erl(1) documentation for more info.\n");
     erts_fprintf(stderr, "-sws val    set scheduler wakeup strategy, valid values are:\n");
-    erts_fprintf(stderr, "            default|legacy.\n");
+    erts_fprintf(stderr, "            default|adaptive|legacy.\n");
     erts_fprintf(stderr, "-swct val   set scheduler wake cleanup threshold, valid values are:\n");
-    erts_fprintf(stderr, "            very_lazy|lazy|medium|eager|very_eager.\n");
+    erts_fprintf(stderr, "            very_lazy|lazy|medium|eager|very_eager|adaptive.\n");
     erts_fprintf(stderr, "-swt val    set scheduler wakeup threshold, valid values are:\n");
-    erts_fprintf(stderr, "            very_low|low|medium|high|very_high.\n");
+    erts_fprintf(stderr, "            very_low|low|medium|high|very_high|adaptive.\n");
     erts_fprintf(stderr, "-sss size   suggested stack size in kilo words for scheduler threads,\n");
     erts_fprintf(stderr, "            valid range is [%d-%d]\n",
 		 ERTS_SCHED_THREAD_MIN_STACK_SIZE,
